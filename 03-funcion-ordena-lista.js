@@ -50,5 +50,8 @@ var numeros = ordena(lista)
 var lista2 = [99, 100, 150, 101, 333, 40]
 var letras = ordena(lista2)
 
+console.log(lista)
 console.log(numeros)
+console.log()
+console.log(lista2)
 console.log(letras)
