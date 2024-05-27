@@ -14,3 +14,7 @@ Aquí podemos ver las bases de la programación. Uso de variables, estructuras d
 ## 03 funcion ordena lista
 
 Introducimos el uso de lsitas y las declaraciones y llamadas a funciones. Ordenamos una lista de forma básica como ejemplo
+
+### cambios:
+
+- Se muestra la lista antes de ordenarse

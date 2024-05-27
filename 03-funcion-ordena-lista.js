@@ -1,63 +1,22 @@
-function ordena(lista) {
+const listaA = [2, 1, 4, 3, 6, 5]
+const listaA1 = listaA.toSorted()
+const listaA2 = listaA.toSorted(function(a, b){return b-a})
 
-    var primer_elem = lista[0]
-    var segundo_elem = lista[1]
-    var tercer_elem = lista[2]
-    var cuarto_elem = lista[3]
-    var quinto_elem = lista[4]
-    var sexto_elem = lista[5]
+var listaB = [990, 100, 150, 101, 333, 400]
+var listaB1 = listaB.toSorted()
+var listaB2 = listaB.toSorted(function(a, b){return b-a})
 
-    if (primer_elem > segundo_elem){
-        primer_elem = lista[1]
-        segundo_elem = lista[0]
-    }
+var listaC = [56, 94, 74, 64, 12, 25]
+var listaC1 = listaC.toSorted()
+var listaC2 = listaC.toSorted(function(a, b){return b-a})
 
-    if (segundo_elem > tercer_elem){
-        segundo_elem = lista[2]
-        tercer_elem = lista[1]
-    }
+console.log("Lista original: "+ listaA)
+console.log("Lista ordenada: " + listaA1)
+console.log("Lista ordenada inversa: " + listaA2)
+console.log("Lista original: " + listaB)
+console.log("Lista ordenada: " + listaB1)
+console.log("Lista ordenada inversa: " + listaB2)
+console.log("Lista original: " + listaC)
+console.log("Lista ordenada: " + listaC1)
+console.log("Lista ordenada inversa: " + listaC2)
 
-    if (tercer_elem > cuarto_elem){
-        tercer_elem = lista[3]
-        cuarto_elem = lista[2]
-    }
-
-    if (cuarto_elem > quinto_elem){
-        cuarto_elem = lista[4]
-        quinto_elem = lista[3]
-    }
-
-    if (quinto_elem > sexto_elem){
-        quinto_elem = lista[5]
-        sexto_elem = lista[4]
-    }
-
-    var listaOrdenada = [
-        primer_elem,
-        segundo_elem,
-        tercer_elem,
-        cuarto_elem,
-        quinto_elem,
-        sexto_elem
-    ]
-
-    return listaOrdenada
-}
-
-var lista = [2, 1, 4, 3, 6, 5]
-var numeros = ordena(lista)
-
-var lista2 = [99, 100, 150, 101, 333, 40]
-var letras = ordena(lista2)
-
-var lista3 = [56, 94, 74, 64, 12, 25]
-var senales = ordena(lista3)
-
-console.log(lista)
-console.log(numeros)
-console.log()
-console.log(lista2)
-console.log(letras)
-console.log()
-console.log(lista3)
-console.log(senales)
